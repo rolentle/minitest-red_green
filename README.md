@@ -30,7 +30,7 @@ Or install it yourself as:
 Once you add this gem to your `Gemfile`, minitest should start printing out red and green colors. If you wish to disable this for some reason,
 
 ```ruby
-Minitest::RedGreenPlugin.disabled = true
+Minitest::RedGreen.disabled = true
 ```
 
 Although, it's probably much simpler to simply remove this gem from your `Gemfile` in the first place :)
