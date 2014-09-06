@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'bundler'
+Bundler.setup
+Bundler.require :default, :development
+
+require 'minitest'
+
+load 'test/red_green_test.rb'
+
+Minitest::RedGreenPlugin.disabled = ENV['TEST_DISABLE']
+
+passed = Minitest.run
+exit passed ? 0 : 1
