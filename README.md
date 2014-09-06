@@ -10,6 +10,13 @@ Add this line to your application's Gemfile:
 gem 'minitest-red_green'
 ```
 
+Or your gem's gemspec:
+
+```ruby
+spec.add_development_dependency 'minitest'
+spec.add_development_dependency 'minitest-red_green'
+```
+
 And then execute:
 
     $ bundle
