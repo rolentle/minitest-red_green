@@ -9,6 +9,10 @@ module Minitest
         @io = io
       end
 
+      def external_encoding
+        @io.external_encoding
+      end
+
       def puts *strings
         if not strings.grep(%r{\d+\) (?:Failure|Error)}).empty?
           strings.map! &method(:red)
